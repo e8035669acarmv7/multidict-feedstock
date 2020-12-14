@@ -3,7 +3,7 @@ About multidict
 
 Home: http://github.com/aio-libs/multidict
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/multidict-feedstock/blob/master/LICENSE.txt)
 
@@ -247,4 +247,5 @@ Feedstock Maintainers
 
 * [@kszucs](https://github.com/kszucs/)
 * [@sodre](https://github.com/sodre/)
+* [@xhochy](https://github.com/xhochy/)
 
