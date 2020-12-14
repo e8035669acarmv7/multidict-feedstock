@@ -39,7 +39,7 @@ test:
 
 about:
   home: http://github.com/aio-libs/multidict
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE
   summary: 'multidict implementation'
 
@@ -52,3 +52,4 @@ extra:
   recipe-maintainers:
     - sodre
     - kszucs
+    - xhochy
