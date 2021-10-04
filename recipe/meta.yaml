@@ -34,8 +34,10 @@ test:
     - tests
   requires:
     - pytest
+    - pip
   commands:
     - py.test tests
+    - pip check
 
 about:
   home: http://github.com/aio-libs/multidict
