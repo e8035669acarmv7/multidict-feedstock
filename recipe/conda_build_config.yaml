@@ -1,0 +1,4 @@
+# stay on clang 14 because multidict 6.0.4 still
+# uses NULL-to-int conversions that clang >14 errors on
+c_compiler_version:     # [osx]
+  - 14                  # [osx]
