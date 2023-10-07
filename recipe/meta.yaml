@@ -1,20 +1,19 @@
-{% set name = "multidict" %}
 {% set version = "6.0.4" %}
-{% set sha256 = "3666906492efb76453c0e7b97f2cf459b0682e7402c0489a95484965dbc1da49" %}
 
 package:
-  name: {{ name|lower }}
+  name: multidict
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/m/multidict/multidict-{{ version }}.tar.gz
+  sha256: 3666906492efb76453c0e7b97f2cf459b0682e7402c0489a95484965dbc1da49
+  patches:
+    # backport https://github.com/aio-libs/multidict/pull/864
+    - patches/0001-Fix-usage-python-C-API-for-version-greater-3.9-and-f.patch
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py2k]
 
 requirements:
   build:
