@@ -32,7 +32,8 @@ test:
     - pytest
     - pip
   commands:
-    - py.test tests
+    - py.test tests --no-c-extensions  # [python_impl != "cpython"]
+    - py.test tests --c-extensions     # [python_impl == "cypthon"]
     - pip check
 
 about:
